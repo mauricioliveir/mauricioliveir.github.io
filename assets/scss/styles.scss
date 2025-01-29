@@ -325,6 +325,9 @@ img{
         border-radius: .5rem;
         z-index: var(--z-back);
     }
+    &__c{
+        width:85%;
+    }
     &__python{
         width:60%;
     }
