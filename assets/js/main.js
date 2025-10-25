@@ -57,36 +57,36 @@ sr.reveal('.skills__data, .work__img, .contact__input', { interval: 100 });
 /*===== EMAILJS INTEGRATION =====*/
 // Inicialize o EmailJS
 (function() {
-    emailjs.init('UwqsJ4UJFOds2_6ML'); // Substitua pelo seu Public Key do EmailJS
+    emailjs.init('6Zk9pkZItswnl98GQ');
 })();
 
 function sendEmail(event) {
-    event.preventDefault(); // Impede o envio padrão do formulário
+    event.preventDefault();
 
     const form = document.getElementById('contact-form');
     const name = form.querySelector('input[name="name"]').value;
     const email = form.querySelector('input[name="email"]').value;
     const message = form.querySelector('textarea[name="message"]').value;
 
-    // Verificar se os campos estão vazios
+
     if (!name || !email || !message) {
         alert('Por favor, preencha todos os campos.');
         return;
     }
 
-    const serviceID = 'service_9z7d8oo';
-    const templateID = 'template_1bdwe6b'; // Use o Template ID configurado no EmailJS
+    const serviceID = 'sMXAkYzJpDx1nIRk-jjEl';
+    const templateID = 'template_1bdwe6b';
 
     emailjs.sendForm(serviceID, templateID, form)
         .then(function(response) {
             alert('Mensagem enviada com sucesso!');
-            form.reset(); // Limpa o formulário
+            form.reset();
         }, function(error) {
             alert('Erro ao enviar mensagem. Tente novamente mais tarde.');
         });
 }
 
-// Adicione o event listener ao formulário
+
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', sendEmail);
