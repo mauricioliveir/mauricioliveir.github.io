@@ -74,7 +74,7 @@ function sendEmail(event) {
         return;
     }
 
-    const serviceID = 'sMXAkYzJpDx1nIRk-jjEl';
+    const serviceID = 'service_3ysil3h';
     const templateID = 'template_1bdwe6b';
 
     emailjs.sendForm(serviceID, templateID, form)
