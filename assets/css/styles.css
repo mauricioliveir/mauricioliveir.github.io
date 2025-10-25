@@ -340,6 +340,11 @@ img {
   width: 85%;
 }
 
+.skills__mysql {
+    background-color: #00758F; /* cor do MySQL */
+    width: 85%;
+}
+
 .skills__img {
   border-radius: .5rem;
 }
