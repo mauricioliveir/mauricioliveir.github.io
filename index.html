@@ -1,262 +1,357 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-        <!-- =====BOX ICONS===== -->
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-        <title>Mauricio De Oliveira</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Mauricio De Oliveira</a>
-                </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">Quem sou</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Badges</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contato</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mauricio De Oliveira | Engenheiro de Software</title>
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Ícones -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">Mauricio De Oliveira</a>
+                
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">Quem sou</a></li>
+                    <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                    <li><a href="#work" class="nav-link">Badges</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
+                </ul>
+                
+                <div class="nav-toggle">
                     <i class='bx bx-menu'></i>
                 </div>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-       
-                <div class="home__data">
-                    <h1 class="home__title">Olá,<br>eu sou <br><span class="home__title-color">Mauricio</span>
-                        <br>Engenheiro de<br> Software</h1>
+    <!-- Home -->
+    <section class="home section" id="home">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-text">
+                    <h1>Olá, eu sou <span class="highlight">Mauricio</span><br>Engenheiro de Software</h1>
+                    <p>Transformando ideias em realidade através da tecnologia e inovação.</p>
+                    <div class="home-social">
+                        <a href="https://www.linkedin.com/in/monitormauricio/" class="social-icon">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                        <a href="https://github.com/mauricioliveir" class="social-icon">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                    </div>
                 </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/monitormauricio/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/mauricioliveir" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                
+                <div class="home-image">
+                    <div class="profile-container">
+                        <div class="profile-image">
+                            <img src="assets/img/perfil.png" alt="Mauricio De Oliveira">
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="60" y="0" href="assets/img/perfil.png"/>
-                        </g>
-                    </svg>
+    <!-- About -->
+    <section class="about section" id="about">
+        <div class="container">
+            <h2 class="section-title">Quem sou</h2>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/img/about.png" alt="Sobre Mauricio">
                 </div>
-            </section>
+                
+                <div class="about-text">
+                    <h2>Bem vindo ao meu portfólio</h2>
+                    <div class="quote">
+                        "A tecnologia é uma extensão da nossa criatividade e imaginação, permitindo-nos transformar ideias em realidade."
+                    </div>
+                    <p>Desde o primeiro contato, a tecnologia não apenas guiou meus passos, ela incendiou minha alma! Iniciei minha trajetória nas instalações elétricas, mas foi na indústria automotiva que descobri um universo pulsante de inovação.</p>
+                    <p>Então, a revolução da Indústria 4.0 chegou como um chamado irrecusável! Um marco transformador que acendeu em mim uma fome insaciável por conhecimento, impulsionando-me a romper barreiras e mergulhar de cabeça no futuro.</p>
+                    <p>Para mim, a tecnologia não é apenas um campo de estudo, é uma paixão, um propósito, uma força que me impulsiona a criar, inovar e transformar o mundo!</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">Quem sou</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.png" alt="">
+    <!-- Skills -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Habilidades</h2>
+            
+            <div class="skills-content">
+                <div class="skills-info">
+                    <div class="skills-text">
+                        <h2>Habilidades profissionais</h2>
+                        <p>Técnico de Manutenção Industrial com ênfase em Automação Industrial, com carreira consolidada na indústria do ramo automotivo e agora migrando para a área de Tecnologia da Informação.</p>
                     </div>
                     
-                    <div>
-                        <h2 class="about__subtitle">Bem vindo ao meu portfólio</h2>
-                        <h3 class="about__text">"A tecnologia é uma extensão da nossa criatividade
-                            e imaginação, permitindo-nos transformar ideias em realidade."</h3>
-
-                        <p class="about__text">Desde o primeiro contato, a tecnologia não apenas guiou meus passos, 
-                            ela incendiou minha alma! Iniciei minha trajetória nas instalações elétricas, 
-                            mas foi na indústria automotiva que descobri um universo pulsante de inovação. 
-                            Então, a revolução da Indústria 4.0 chegou como um chamado irrecusável! 
-                            Um marco transformador que acendeu em mim uma fome insaciável por conhecimento, 
-                            impulsionando-me a romper barreiras e mergulhar de cabeça no futuro. 
-                            Para mim, a tecnologia não é apenas um campo de estudo, é uma paixão, um propósito, 
-                            uma força que me impulsiona a criar, inovar e transformar o mundo!</p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Habilidades</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Habilidades profissionais</h2>
-                        <p class="skills__text">Técnico de Manutenção Industrial com ênfase em Automação Industrial, 
-                            com carreira consolidada na indústria do ramo automotivo e agora migrando para a área de 
-                            Tecnologia da Informação.</p>
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <i class='bx bxl-c-plus-plus skills__icon'></i>
-                                    <span class="skills__name">C</span>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name">
+                                    <i class='bx bxl-c-plus-plus'></i>
+                                    <span>C</span>
                                 </div>
-                                <div class="skills__bar skills__c" style="width:85%;">
-                                    
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name">
+                                    <i class='bx bxl-git'></i>
+                                    <span>Git</span>
                                 </div>
-                                <div>
-                                    <span class="skills__percentage">85%</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name">
+                                    <i class='bx bxl-python'></i>
+                                    <span>Python</span>
                                 </div>
+                                <span class="skill-percentage">60%</span>
                             </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-git skills__icon'></i>
-                                <span class="skills__name">Git</span>
-                            </div>
-                            <div class="skills__bar skills__git" style="width:75%;">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">75%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%"></div>
                             </div>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-python skills__icon'></i>
-                                <span class="skills__name">Python</span>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name">
+                                    <i class='bx bxl-docker'></i>
+                                    <span>Docker</span>
+                                </div>
+                                <span class="skill-percentage">50%</span>
                             </div>
-                            <div class="skills__bar skills__python"style="width:60%;">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">60%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-docker skills__icon' ></i>
-                                <span class="skills__name">Docker</span>
-                            </div>
-                            <div class="skills__bar skills__docker"style="width:50%;">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">50%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 50%"></div>
                             </div>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-postgresql skills__icon'></i>
-                                <span class="skills__name">Postgresql</span>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name">
+                                    <i class='bx bxl-postgresql'></i>
+                                    <span>PostgreSQL</span>
+                                </div>
+                                <span class="skill-percentage">45%</span>
                             </div>
-                            <div class="skills__bar skills__postgresql" style="width:45%;">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">45%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-aws skills__icon'></i>
-                                <span class="skills__name">AWS</span>
-                            </div>
-                            <div class="skills__bar skills__aws" style="width:30%;">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">30%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 45%"></div>
                             </div>
                         </div>
-
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bx-data skills__icon'></i>
-                                <span class="skills__name">MySQL</span>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name">
+                                    <i class='bx bxl-aws'></i>
+                                    <span>AWS</span>
+                                </div>
+                                <span class="skill-percentage">30%</span>
                             </div>
-                            <div class="skills__bar skills__mysql" style="width:50%;"></div>
-                            <div>
-                                <span class="skills__percentage">50%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 30%"></div>
                             </div>
-                        <div class="skills__img-container">
-                            <img src="assets/img/loadimg.jpg" alt="" class="skills__img">
                         </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name">
+                                    <i class='bx bxl-my-sql'></i>
+                                    <span>MySQL</span>
+                                </div>
+                                <span class="skill-percentage">50%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
-
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Badges</h2>
-
-                <div class="work__container bd-grid">
-                    <a href="https://www.credly.com/badges/53b31e8c-79e4-4858-bd43-ce8a99e12668/public_url" class="work__img">
-                        <img src="assets/img/aws-partner-accreditation-technical.png" alt="badge AWS">
-                    </a>
-                    <a href="https://www.credly.com/badges/07f4839d-a33d-43dd-83c9-b8250fb467b8/public_url" class="work__img">
-                        <img src="assets/img/aws-partner-sales-accreditation-business.png" alt="badge AWS">
-                    </a>
-                    <a href="https://www.credly.com/badges/aab1f0cc-0c1a-4109-910b-98e661f9adbd/public_url" class="work__img">
-                        <img src="assets/img/aws-partner-cloud-economics-accreditation.png" alt="badge AWS">
-                    </a>
-                    <a href="https://www.credly.com/badges/1fd4146c-ed3b-4d7d-925c-727fe410b57e/public_url" class="work__img">
-                        <img src="assets/img/aws-cloud-quest-cloud-practitioner.png" alt="badge AWS">
-                    </a>
-                    <a href="https://www.credly.com/badges/75ccd606-d35f-4133-8bd3-f930c6be9643/public_url" class="work__img">
-                        <img src="assets/img/microsoft-certified-azure-ai-fundamentals.png" alt="badge Microsoft">
-                    </a>
-                    <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=92258A82240D070F80A2982A2108D99E3ECC34B087C084F9B46E63B3B15FCA42" class="work__img">
-                        <img src="assets/img/Orecle Foundations Associate.png" alt="badge Oracle">
-                    </a>
+                
+                <div class="skills-visual">
+                    <img src="assets/img/loadimg.jpg" alt="Habilidades">
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contato</h2>
-               
-                <div class="contact__container bd-grid">
-                    <h2 class="section-text">Pelo WhatsApp</h2>
-                    <br>Clicando no icone<br>
-                    <a href="https://api.whatsapp.com/send?phone=5542999140831&text=&source=&data=" class="work__wpp">
-                        <img src="assets/img/wpp.png"  alt="WhatsApp"style="display: block; margin: 0 auto; width: 6%;">
-                    </a>
-                    <form id="contact-form" class="contact__form">
-                        <h2 class="section-text">Ou envie sua mensagem</h2>
-                        <label for="name" class="required-label">Seu nome <span class="required-asterisk">*</span></label>
-                        <input type="text" id="name" name="name" placeholder="" class="contact__input" required>
+    <!-- Work -->
+    <section class="work section" id="work">
+        <div class="container">
+            <h2 class="section-title">Badges</h2>
+            
+            <div class="work-grid">
+                <a href="https://www.credly.com/badges/53b31e8c-79e4-4858-bd43-ce8a99e12668/public_url" class="work-item">
+                    <div class="work-image">
+                        <img src="assets/img/aws-partner-accreditation-technical.png" alt="AWS Partner Accreditation Technical">
+                    </div>
+                    <div class="work-content">
+                        <h3>AWS Partner Accreditation Technical</h3>
+                    </div>
+                </a>
+                
+                <a href="https://www.credly.com/badges/07f4839d-a33d-43dd-83c9-b8250fb467b8/public_url" class="work-item">
+                    <div class="work-image">
+                        <img src="assets/img/aws-partner-sales-accreditation-business.png" alt="AWS Partner Sales Accreditation Business">
+                    </div>
+                    <div class="work-content">
+                        <h3>AWS Partner Sales Accreditation Business</h3>
+                    </div>
+                </a>
+                
+                <a href="https://www.credly.com/badges/aab1f0cc-0c1a-4109-910b-98e661f9adbd/public_url" class="work-item">
+                    <div class="work-image">
+                        <img src="assets/img/aws-partner-cloud-economics-accreditation.png" alt="AWS Partner Cloud Economics Accreditation">
+                    </div>
+                    <div class="work-content">
+                        <h3>AWS Partner Cloud Economics Accreditation</h3>
+                    </div>
+                </a>
+                
+                <a href="https://www.credly.com/badges/1fd4146c-ed3b-4d7d-925c-727fe410b57e/public_url" class="work-item">
+                    <div class="work-image">
+                        <img src="assets/img/aws-cloud-quest-cloud-practitioner.png" alt="AWS Cloud Quest Cloud Practitioner">
+                    </div>
+                    <div class="work-content">
+                        <h3>AWS Cloud Quest Cloud Practitioner</h3>
+                    </div>
+                </a>
+                
+                <a href="https://www.credly.com/badges/75ccd606-d35f-4133-8bd3-f930c6be9643/public_url" class="work-item">
+                    <div class="work-image">
+                        <img src="assets/img/microsoft-certified-azure-ai-fundamentals.png" alt="Microsoft Certified Azure AI Fundamentals">
+                    </div>
+                    <div class="work-content">
+                        <h3>Microsoft Certified Azure AI Fundamentals</h3>
+                    </div>
+                </a>
+                
+                <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=92258A82240D070F80A2982A2108D99E3ECC34B087C084F9B46E63B3B15FCA42" class="work-item">
+                    <div class="work-image">
+                        <img src="assets/img/Orecle Foundations Associate.png" alt="Oracle Foundations Associate">
+                    </div>
+                    <div class="work-content">
+                        <h3>Oracle Foundations Associate</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contato</h2>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class='bx bxl-whatsapp'></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>WhatsApp</h3>
+                            <p>Clique no ícone para conversar</p>
+                            <a href="https://api.whatsapp.com/send?phone=5542999140831&text=&source=&data=" class="btn btn-primary" style="margin-top: 10px;">Conversar</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class='bx bxl-linkedin'></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <p>Conecte-se profissionalmente</p>
+                            <a href="https://www.linkedin.com/in/monitormauricio/" class="btn btn-primary" style="margin-top: 10px;">Conectar</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class='bx bxl-github'></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <p>Veja meus projetos</p>
+                            <a href="https://github.com/mauricioliveir" class="btn btn-primary" style="margin-top: 10px;">Explorar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 1.5rem;">Envie sua mensagem</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Seu nome *</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
                         
-                        <label for="email" class="required-label">Seu e-mail <span class="required-asterisk">*</span></label>
-                        <input type="email" id="email" name="email" placeholder="" class="contact__input" required>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Seu e-mail *</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
                         
-                        <label for="message" class="required-label">Digite aqui a sua mensagem <span class="required-asterisk">*</span></label>
-                        <textarea id="message" name="message" placeholder="" cols="0" rows="10" class="contact__input" required></textarea>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Digite aqui a sua mensagem *</label>
+                            <textarea id="message" name="message" class="form-control" required></textarea>
+                        </div>
                         
-                        <input type="submit" value="Enviar" class="contact__button button">
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
                     </form>
                 </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title"></p>
-            <div class="footer__social">
-                <a href="https://www.linkedin.com/in/monitormauricio/" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/mauricioliveir" class="footer__icon"><i class='bx bxl-github' ></i></a>
             </div>
-            <p class="footer__copy">Mauricio De Oliveira<br>
-                <p>Copyright © 2025</p>
-            </p>
-        </footer>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="footer-logo">Mauricio De Oliveira</a>
+                
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/monitormauricio/">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://github.com/mauricioliveir">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                </div>
+                
+                <p class="footer-copy">Copyright © 2025 Mauricio De Oliveira. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-        <script src="assets/js/main.js"></script>
-    </body>
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
